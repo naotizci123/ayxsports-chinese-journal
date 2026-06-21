@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏体育 · 资料信息索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #2e2e2e;
+      line-height: 1.7;
+      padding: 2.5rem 1.25rem;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-top: 0.3rem;
+      margin-bottom: 1.25rem;
+      color: #1a1a1a;
+      border-left: 4px solid #2b7a4b;
+      padding-left: 1rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 2.2rem;
+      margin-bottom: 0.75rem;
+      color: #1f3b2e;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+      color: #2e5a42;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #1f6e43;
+      text-decoration: none;
+      border-bottom: 1px dotted #98c3ae;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #0b452a;
+      border-bottom: 1px solid #0b452a;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dfe7e2;
+      margin: 2rem 0 1.5rem;
+    }
+
+    .meta-note {
+      background: #f1f6f2;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin: 1.8rem 0 1.2rem;
+      font-size: 0.9rem;
+      border-left: 3px solid #3f8b62;
+    }
+
+    .meta-note strong {
+      color: #1c4a32;
+      font-weight: 500;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.75rem;
+      margin: 1.2rem 0 1.8rem;
+      list-style: none;
+    }
+
+    .tag-list li {
+      background: #e7efe9;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      color: #2c543c;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.8rem;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #e1eae4;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      transition: box-shadow 0.15s;
+    }
+
+    .info-card:hover {
+      box-shadow: 0 4px 12px rgba(30, 60, 40, 0.06);
+    }
+
+    .info-card .card-title {
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+      color: #1a412e;
+    }
+
+    .info-card .card-desc {
+      font-size: 0.8rem;
+      color: #4d5f55;
+      line-height: 1.5;
+    }
+
+    .faq-mini {
+      margin: 1.8rem 0;
+    }
+
+    .faq-mini details {
+      border-bottom: 1px solid #e1eae4;
+      padding: 0.6rem 0;
+    }
+
+    .faq-mini details:first-of-type {
+      border-top: 1px solid #e1eae4;
+    }
+
+    .faq-mini summary {
+      font-weight: 450;
+      cursor: pointer;
+      color: #1f3b2e;
+      padding: 0.3rem 0;
+      font-size: 0.9rem;
+    }
+
+    .faq-mini summary::-webkit-details-marker {
+      color: #3f8b62;
+    }
+
+    .faq-mini p {
+      margin: 0.5rem 0 0.2rem 0.6rem;
+      font-size: 0.85rem;
+      color: #36483d;
+    }
+
+    .prompt-box {
+      background-color: #f3f8f5;
+      border-radius: 12px;
+      padding: 1.25rem 1.6rem;
+      margin: 2rem 0 0.8rem;
+      font-size: 0.9rem;
+      border: 1px solid #d2e2d9;
+    }
+
+    .prompt-box strong {
+      color: #1c4a32;
+    }
+
+    .footer-note {
+      font-size: 0.75rem;
+      color: #7d8e84;
+      border-top: 1px solid #dce5e0;
+      padding-top: 1.2rem;
+      margin-top: 2.8rem;
+      text-align: left;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+      }
+      .meta-note {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>爱游戏体育 · 资料索引</h1>
+
+  <p>这是一个围绕<strong>爱游戏体育</strong>整理的信息集合页，从归档与查阅角度出发，整合了基本说明、关联信息以及常见问题摘要。页面内容保持中立，仅作资料整理之用。</p>
+
+  <!-- 说明区 -->
+  <div class="meta-note">
+    <strong>说明</strong><br>
+    本站点集中归纳了与「爱游戏体育」相关的基本概念、功能模块以及常见思路。所有资料均来自公开可查的信息源，并进行了结构化处理。如需了解完整内容，可直接访问<a href="https://ayxsports-chinese.com">爱游戏体育</a>。
+  </div>
+
+  <!-- 标签/关键词 -->
+  <ul class="tag-list">
+    <li>资料归档</li>
+    <li>信息索引</li>
+    <li>体育资讯</li>
+    <li>目录化</li>
+    <li>简明说明</li>
+  </ul>
+
+  <!-- 信息卡片（目录感布局） -->
+  <h2>相关信息区</h2>
+  <div class="card-grid">
+    <div class="info-card">
+      <div class="card-title">📋 平台概述</div>
+      <div class="card-desc">围绕体育内容整理的聚合型站点，涵盖资讯、赛事资料与基础说明模块。</div>
+    </div>
+    <div class="info-card">
+      <div class="card-title">📁 内容分类</div>
+      <div class="card-desc">常见分类包括赛事动态、专题汇总、运动项目说明及背景资料。</div>
+    </div>
+    <div class="info-card">
+      <div class="card-title">🧭 使用建议</div>
+      <div class="card-desc">可依据目录结构或关键词检索，快速定位到所需信息条目。</div>
+    </div>
+    <div class="info-card">
+      <div class="card-title">🔎 关联参考</div>
+      <div class="card-desc">部分资料链接至更详细的说明页面，便于进一步查阅。</div>
+    </div>
+  </div>
+
+  <!-- 提示区 -->
+  <h2>提示</h2>
+  <p>整理者建议：以索引方式使用本页，将<strong>爱游戏体育</strong>作为查询起点，再根据实际需求深入对应版块。资料持续更新，但无法保证所有内容均为最新，请以原站为准。</p>
+  <p>若在查阅过程中遇到不明确的概念，可先参考常见问题摘要，或直接浏览 <a href="https://ayxsports-chinese.com">爱游戏体育</a> 的目录页获取更多线索。</p>
+
+  <!-- FAQ摘要 -->
+  <h2>常见问题摘要</h2>
+  <div class="faq-mini">
+    <details>
+      <summary>爱游戏体育包含哪些主要内容？</summary>
+      <p>该站点主要围绕体育相关资讯、基础说明及分类索引组织内容，不局限于单一运动项目。</p>
+    </details>
+    <details>
+      <summary>信息更新频率如何？</summary>
+      <p>根据公开资料显示，内容会不定期调整与补充，具体以实际页面为准。</p>
+    </details>
+    <details>
+      <summary>是否支持移动端阅读？</summary>
+      <p>页面本身已按响应式设计，同时原站也适配不同设备，方便随时查阅。</p>
+    </details>
+  </div>
+
+  <!-- 额外提示块 -->
+  <div class="prompt-box">
+    <strong>整理备忘</strong> · 本页作为知识库入口页采用目录式布局，旨在帮助使用者快速建立信息框架。所有链接指向<a href="https://ayxsports-chinese.com">爱游戏体育</a>的内容均保持原样，不做二次包装。
+  </div>
+
+  <hr>
+
+  <p style="font-size: 0.85rem; color: #506357;">本页仅为资料索引说明，不构成任何引导或推荐。如有具体问题请直接参考原站对应栏目。</p>
+
+  <div class="footer-note">
+    爱游戏体育 · 资料整理页面 ｜ 内容方向：知识库入口式 · 目录感布局
+  </div>
+
+</div>
+</body>
+</html>
